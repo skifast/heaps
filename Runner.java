@@ -1,3 +1,4 @@
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Runner{
@@ -7,7 +8,7 @@ public class Runner{
 		int[] hello = new int[10];
 		
 		//generates random numbers for the new array
-		Random randGenerate = new Random();
+		Random randGenerate = new SecureRandom();
 		
 		for(int i = 0; i < 10; i ++){
 			int k = randGenerate.nextInt(100);
